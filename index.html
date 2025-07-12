@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div class="container">
+    <h1>Todo List</h1>
+    <input type="text" placeholder="Add your task" id = "task" name="task">
+    <button class="add-task">Add</button>
+    <button class="edit-task">Edit</button>
+    
+    <ul class="task-list" type="none">
+        <li class="li"> 
+            <input type="checkbox" name="done" id="done">
+            <span class="task-text">Wake up in the morning </span>
+         <i class="fa-regular fa-pen-to-square" id="edit"></i>
+            <i class="fa-solid fa-trash" id="del"></i> 
+        </li>
+
+        <li class="li"> 
+            <input type="checkbox" name="done" id="done"> 
+            <span class="task-text">Start Workout routine as usual</span>
+            <i class="fa-regular fa-pen-to-square" id="edit"></i>
+             <i class="fa-solid fa-trash" id="del"></i>
+             </li>
+        <li class="li"> 
+            <input type="checkbox" name="done" id="done"> 
+            <span class="task-text">Prepare breakfast and Get ready for work</span>
+            <i class="fa-regular fa-pen-to-square" id="edit"></i>
+            <i class="fa-solid fa-trash" id="del"></i>
+         </li>
+    </ul>
+</div>
+    <script src="app.js"></script>
+</body>
+</html>
