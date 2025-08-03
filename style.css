@@ -6,20 +6,24 @@ body{
     background-color: #F0F4F8;
      font-family: 'Roboto', sans-serif;
 }
+h1{
+    font-size: 40px;
+}
 
 .container{
  display: flex;
  flex-direction: column;
  align-items: center;
  justify-items: center;
- width: 45%;
+ width: 90%;
  border: 1px solid black;
  background-color: #fff;
  border-radius: 1rem;
+ 
 }
 #task{
     width: 80%;
-    height: 30px;
+    height: 40px;
     padding: 0 10px 0 10px;
     border-radius: 2rem;
     margin: 1rem 0 1.25rem 0;
@@ -63,6 +67,7 @@ body{
     width: 100%;
     justify-content: space-between;
     height: 1.5rem;
+    font-size : 1.1rem
 
 }
 li #done{
@@ -72,9 +77,8 @@ li #done{
     width: 1rem;
 }
 li .task-text{
-    justify-self: start;
-    flex-grow: 1;
-
+    flex-grow : 1;
+    overflow-inline : auto;
 }
 li #edit{
   margin-right: 0.75rem;

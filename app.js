@@ -10,9 +10,9 @@ taskbtn.addEventListener("click", function (){
     
      let delbtn = document.createElement("i");
      let editbtn = document.createElement("i");
-     let span = document.createElement("span");
-     span.classList.add("task-text");
-     span.innerText = input.value;
+     let div = document.createElement("div");
+     div.classList.add("task-text");
+     div.innerText = input.value;
      delbtn.classList.add("fa-solid","fa-trash");
      editbtn.classList.add("fa-regular","fa-pen-to-square")
      delbtn.setAttribute("id","del");
@@ -22,7 +22,7 @@ taskbtn.addEventListener("click", function (){
      checkbox.setAttribute("id","done")
  
     task.appendChild(checkbox);
-    task.appendChild(span);
+    task.appendChild(div);
     task.appendChild(editbtn);
      task.appendChild(delbtn);
       list.appendChild(task);
