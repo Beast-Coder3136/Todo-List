@@ -15,7 +15,7 @@ h1{
  flex-direction: column;
  align-items: center;
  justify-items: center;
- width: 90%;
+ width: 45%;
  border: 1px solid black;
  background-color: #fff;
  border-radius: 1rem;
@@ -67,7 +67,8 @@ h1{
     width: 100%;
     justify-content: space-between;
     height: 1.5rem;
-    font-size : 1.1rem
+    font-size : 18px;
+    font-weight: 500;
 
 }
 li #done{
@@ -101,4 +102,8 @@ li #del:hover{
 .remove-icon{
     display: none;
 }
-
+@media (max-width: 670px){
+    .container{
+        width: 90%;
+    }
+}
